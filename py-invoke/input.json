@@ -1,0 +1,56 @@
+{
+    "name": "Ivan",
+    "surname": "Ivanov",
+    "account": [
+        {
+            "payment_date_balance": 0
+        },
+        {
+            "payment_date_balance": 30
+        },
+        {
+            "payment_date_balance": 40
+        },
+        {
+            "payment_date_balance": 80
+        },
+        {
+            "payment_date_balance": 10
+        },
+        {
+            "payment_date_balance": 50
+        }
+    ],
+    "loan":[
+        {
+            "payment": 50,
+            "payment_date": "2021-01-15T00:00:00Z",
+            "actual_payment_date": "2021-01-16T00:00:00Z"
+        },
+        {
+            "payment": 50,
+            "payment_date": "2021-02-15T00:00:00Z",
+            "actual_payment_date": "2021-02-20T00:00:00Z"
+        },
+        {
+            "payment": 50,
+            "payment_date": "2021-03-15T00:00:00Z",
+            "actual_payment_date": "2021-03-25T00:00:00Z"
+        },
+        {
+            "payment": 50,
+            "payment_date": "2021-04-15T00:00:00Z",
+            "actual_payment_date": "2021-04-15T00:00:00Z"
+        },
+        {
+            "payment": 50,
+            "payment_date": "2021-05-15T00:00:00Z",
+            "actual_payment_date": "2021-05-18T00:00:00Z"
+        },
+        {
+            "payment": 50,
+            "payment_date": "2021-06-15T00:00:00Z",
+            "actual_payment_date": "2021-06-15T00:00:00Z"
+        }
+    ]
+}
