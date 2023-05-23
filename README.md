@@ -9,6 +9,8 @@ Example of how to call **_GO_** code from **_Python_**.
 
 ## Golang code prepare
 
+Folder `go-app`.
+
 Golang script was compiled into an executable file `.so` using the command:
 
 ```bash
