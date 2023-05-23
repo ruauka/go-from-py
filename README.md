@@ -30,3 +30,10 @@ To start the service run the command in the terminal:
 ```bash
 sanic main:app --host=0.0.0.0 --port=8000 --workers=1
 ```
+
+To get the calculation send a POST request to http://localhost:8000/execute. 
+
+The example of request JSON you con find in directory:
+```bash
+py-invoke/input.json
+```
