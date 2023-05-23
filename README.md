@@ -19,7 +19,7 @@ go build -buildmode=c-shared -o go_app.so main.go
 
 Folder `py-invoke`.
 
-To call the GO code from Python, the was used Python library `ctypes` - https://pypi.org/project/ctypes/
+To call the GO code from Python was used Python library `ctypes` - https://pypi.org/project/ctypes/
 
 To create the invoke service was used Router `Sanic` - https://sanic.dev/en/
 
