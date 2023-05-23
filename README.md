@@ -9,7 +9,7 @@ Example of how to call **_GO_** code from **_Python_**.
 
 ## Golang code prepare
 
-Folder `go-app`.
+Folder `go-app`
 
 Golang script was compiled into an executable file `.so` using the command:
 
@@ -19,7 +19,7 @@ go build -buildmode=c-shared -o go_app.so main.go
 
 ## Python invoker
 
-Folder `py-invoke`.
+Folder `py-invoke`
 
 To call the GO code from Python was used Python library `ctypes` - https://pypi.org/project/ctypes/
 
