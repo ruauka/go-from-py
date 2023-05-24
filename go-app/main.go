@@ -22,6 +22,10 @@ import (
 
 // Execute - основная функция скрипта.
 func Execute(req *request.Request) (response.Response, error) {
+	// Валидация объекта структуры Request.
+	if err := request.ValidateStruct(req); err != nil {
+		return response.Response{}, err
+	}
 	// создание словаря данных.
 	data := logic.NewData(req)
 	// вызов методов логики.

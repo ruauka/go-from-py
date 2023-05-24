@@ -43,13 +43,6 @@ del_error.argtypes = [Error]
 buf_size: int = 20 << 20  # 20mb
 buf: ctypes.Array[ctypes.c_char] = ctypes.create_string_buffer(buf_size)
 
-# with open(os.path.join("input.json"), "r") as f:
-#     payload = json.load(f)
-#
-# resp: InvokeResult = invoke(json.dumps(payload).encode('utf-8'), buf, buf_size)
-# resp.err.raise_if_err()
-# print(resp.result.decode())
-
 # сервис
 app = Sanic("Go_from_Py")
 
@@ -57,7 +50,19 @@ app = Sanic("Go_from_Py")
 # хендлер
 @app.post("/execute")
 async def handler(request: Request):
+    # ответ go функции
     resp: InvokeResult = invoke(j.dumps(request.json).encode('utf-8'), buf, buf_size)
-    resp.err.raise_if_err()
+    # обработка ошибки
+    try:
+        resp.err.raise_if_err()
+    except Exception as ex:
+        return json({"err": f"{ex}"})
 
     return json(j.loads(resp.result.decode()))
+
+# with open(os.path.join("input.json"), "r") as f:
+#     payload = json.load(f)
+#
+# resp: InvokeResult = invoke(json.dumps(payload).encode('utf-8'), buf, buf_size)
+# resp.err.raise_if_err()
+# print(resp.result.decode())
