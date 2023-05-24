@@ -56,9 +56,9 @@ async def handler(request: Request):
     try:
         resp.err.raise_if_err()
     except Exception as ex:
-        return json({"err": f"{ex}"})
+        return json({"err": f"{ex}"}, status=400)
 
-    return json(j.loads(resp.result.decode()))
+    return json(j.loads(resp.result.decode()), status=200)
 
 # with open(os.path.join("input.json"), "r") as f:
 #     payload = json.load(f)
