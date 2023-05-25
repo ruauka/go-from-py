@@ -1,6 +1,6 @@
 ## Project description
 
-Example of how to call **_GO_** code from **_Python_**.
+Example of how to execute **_GO_** code from **_Python_**.
 
 ## Environment
 
@@ -33,7 +33,7 @@ sanic main:app --host=0.0.0.0 --port=8000 --workers=1
 
 To get the calculation send a POST request to http://localhost:8000/execute. 
 
-The example of request JSON you con find in directory:
+The example of request JSON you can find in directory:
 ```bash
 py-invoke/input.json
 ```
