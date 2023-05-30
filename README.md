@@ -11,7 +11,7 @@ Example of how to execute **_GO_** code from **_Python_**.
 
 Folder `go-app`
 
- - For **mac os**:
+ - For **Mac OS**:
 
 Golang script was compiled into an executable file `.so` using the command:
 
@@ -19,7 +19,7 @@ Golang script was compiled into an executable file `.so` using the command:
 go build -buildmode=c-shared -o go_app.so main.go
 ```
 
-- For **Linux**:
+- For **Linux** (_if you on Mac_):
 
 You have to compilation in Docker with command:
 ```bash
