@@ -24,3 +24,6 @@ pprof-cpu:
 
 build:
 	go build -buildmode=c-shared -o go_app.so main.go
+
+linux-create:
+	docker build . --tag=go-app-compiler && docker cp $(docker create --rm go-app-compiler):app/go_app_linux.so go_app_linux.so

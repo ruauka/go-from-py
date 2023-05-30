@@ -11,10 +11,19 @@ Example of how to execute **_GO_** code from **_Python_**.
 
 Folder `go-app`
 
+ - For **mac os**:
+
 Golang script was compiled into an executable file `.so` using the command:
 
 ```bash
 go build -buildmode=c-shared -o go_app.so main.go
+```
+
+- For **Linux**:
+
+You have to compilation in Docker with command:
+```bash
+docker build --tag=go-app-compiler . && docker cp $(docker create --rm go-app-compiler):app/go_app_linux.so go_app_linux.so
 ```
 
 ## Python invoker
