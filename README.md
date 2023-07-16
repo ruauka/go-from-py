@@ -1,4 +1,4 @@
-## Project description
+## Overview
 
 Example of how to execute **_GO_** code from **_Python_**.
 
