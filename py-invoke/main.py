@@ -27,7 +27,7 @@ class InvokeResult(ctypes.Structure):
 
 
 # читаем файл
-lib = ctypes.CDLL('./go_app.so')
+lib = ctypes.CDLL('./go_app_m2.so')
 
 # функция invoke, импортируемая из go логики
 invoke = lib.invoke
